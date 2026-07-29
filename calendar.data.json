@@ -1,1 +1,48 @@
-[{"days":[{"dayOfTheWeek":"Monday","menuItem":"Chicken and waffles"},{"dayOfTheWeek":"Tuesday","menuItem":"Tacos"},{"dayOfTheWeek":"Wednesday","menuItem":"Curry"},{"dayOfTheWeek":"Thursday","menuItem":"Pizza"},{"dayOfTheWeek":"Friday","menuItem":"Sushi"}]},{"days":[{"dayOfTheWeek":"Monday","menuItem":"Breakfast for lunch"},{"dayOfTheWeek":"Tuesday","menuItem":"Hamburgers"},{"dayOfTheWeek":"Wednesday","menuItem":"Spaghetti"},{"dayOfTheWeek":"Thursday","menuItem":"Salmon"},{"dayOfTheWeek":"Friday","menuItem":"Sandwiches"}]}]
+{
+  "weeks": {
+    "2026-07-13": [
+      {
+        "dayOfTheWeek": "MONDAY",
+        "menuItem": "pizza"
+      },
+      {
+        "dayOfTheWeek": "TUESDAY",
+        "menuItem": "hot dogs"
+      },
+      {
+        "dayOfTheWeek": "WEDNESDAY",
+        "menuItem": "burgers"
+      },
+      {
+        "dayOfTheWeek": "THURSDAY",
+        "menuItem": "tacos"
+      },
+      {
+        "dayOfTheWeek": "FRIDAY",
+        "menuItem": "salad"
+      }
+    ],
+    "2026-07-20": [
+      {
+        "dayOfTheWeek": "MONDAY",
+        "menuItem": "burgers"
+      },
+      {
+        "dayOfTheWeek": "TUESDAY",
+        "menuItem": "tacos"
+      },
+      {
+        "dayOfTheWeek": "WEDNESDAY",
+        "menuItem": "salad"
+      },
+      {
+        "dayOfTheWeek": "THURSDAY",
+        "menuItem": "pizza"
+      },
+      {
+        "dayOfTheWeek": "FRIDAY",
+        "menuItem": "steak"
+      }
+    ]
+  }
+}

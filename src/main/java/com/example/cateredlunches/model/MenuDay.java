@@ -1,22 +1,22 @@
 package com.example.cateredlunches.model;
 
 public class MenuDay {
-    private String dayOfTheWeek;
+    private DayOfWeekIndicator dayOfTheWeek;
     private String menuItem;
 
     public MenuDay() {
     }
 
-    public MenuDay(String dayOfTheWeek, String menuItem) {
+    public MenuDay(DayOfWeekIndicator dayOfTheWeek, String menuItem) {
         this.dayOfTheWeek = dayOfTheWeek;
         this.menuItem = menuItem;
     }
 
-    public String getDayOfTheWeek() {
+    public DayOfWeekIndicator getDayOfTheWeek() {
         return dayOfTheWeek;
     }
 
-    public void setDayOfTheWeek(String dayOfTheWeek) {
+    public void setDayOfTheWeek(DayOfWeekIndicator dayOfTheWeek) {
         this.dayOfTheWeek = dayOfTheWeek;
     }
 

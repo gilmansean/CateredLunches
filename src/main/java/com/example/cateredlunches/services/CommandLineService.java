@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class CommandLineService implements CommandLineRunner {
-    private CalendarService calendarService;
-    private DisplayService displayService;
-    private MenuService menuService;
+    private final CalendarService calendarService;
+    private final DisplayService displayService;
+    private final MenuService menuService;
 
     public CommandLineService(CalendarService calendarService, DisplayService displayService, MenuService menuService) {
         this.calendarService = calendarService;
@@ -22,7 +22,7 @@ public class CommandLineService implements CommandLineRunner {
     public void run(String... args) throws Exception {
         String choice = "";
         boolean running = true;
-        while(running){
+        while (running) {
             displayService.showHeader();
             displayService.displayOnScreen(calendarService.showCalendar());
             menuService.showMenu();

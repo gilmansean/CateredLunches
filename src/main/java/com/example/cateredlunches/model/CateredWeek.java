@@ -14,8 +14,8 @@ public class CateredWeek {
         this.days = days;
     }
 
-    public void addDay(MenuDay day){
-        if(days == null){
+    public void addDay(MenuDay day) {
+        if (days == null) {
             days = new ArrayList<>();
         }
         days.add(day);

@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class MenuService {
-    private DisplayService displayService;
-    private CalendarService calendarService;
+    private final DisplayService displayService;
+    private final CalendarService calendarService;
 
     public MenuService(DisplayService displayService, CalendarService calendarService) {
         this.displayService = displayService;
@@ -19,19 +19,21 @@ public class MenuService {
      * Show the menu choices.
      */
     public void showMenu() {
-        displayService.displayOnScreen( "a: Add Week\n" +
-                "d: Delete Week\n"+
+        displayService.displayOnScreen("a: Add Week\n" +
+                "v: View Week\n" +
+                "d: Delete Week\n" +
                 "q: Quit");
     }
 
     /**
      * Takes the choice the user input and processes it.
+     *
      * @param choice - User input
      * @return - boolean determining if processing should continue or is all done.
      */
     public boolean processMenuChoice(String choice) {
         boolean processing = true;
-        switch(choice){
+        switch (choice) {
             case "A":
             case "a":
                 calendarService.addWeek();
@@ -39,6 +41,10 @@ public class MenuService {
             case "D":
             case "d":
                 calendarService.deleteWeek();
+                break;
+            case "V":
+            case "v":
+                calendarService.viewWeek();
                 break;
             case "Q":
             case "q":
